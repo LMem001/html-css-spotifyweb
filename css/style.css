@@ -53,6 +53,8 @@ main {
   position: fixed;
   text-align: right;
   z-index: 1;
+  line-height: 100px;
+  vertical-align: center;
 }
 
 .albums  {
@@ -68,6 +70,12 @@ main {
 .albums ul li {
   list-style: none;
   display: inline-block;
+}
+
+.albums ul li a {
+  text-decoration: none;
+  color: currentColor;
+  text-transform: uppercase;
 }
 
 .showcase {
