@@ -40,14 +40,27 @@ main {
   background-color: yellow;
 }
 /* menu end */
-
-.albums {
-  overflow: auto;
+/* main page */
+.main_page {
   height: 100vh;
-  width: calc(100% - 200px);
   background-color: red;
+  width: calc(100% - 200px);
 }
 
+.upgrade {
+  background-color: grey;
+  width: calc(100% - 200px);
+  height: 100px;
+  position: fixed;
+  text-align: right;
+  z-index: 1;
+}
+
+.albums  {
+  overflow: auto;
+  padding: 100px;
+}
+/* main page end */
 @media screen and (max-width: 767px) {
   .menu {
     width: 50px;
