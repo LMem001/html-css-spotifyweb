@@ -5,3 +5,18 @@
   box-sizing: border-box;
 }
 /* Mix end */
+
+.menu {
+  display: inline-block;
+  height: 100vh;
+  width: 200px;
+  background-color: green;
+  margin-right: -4px;
+}
+
+.albums {
+  display: inline-block;
+  height: 100vh;
+  width: calc(100% - 200px);
+  background-color: red;
+}
