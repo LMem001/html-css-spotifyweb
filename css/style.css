@@ -42,7 +42,6 @@ main {
 /* menu end */
 /* main page */
 .main_page {
-  height: 100vh;
   background-color: red;
   width: calc(100% - 200px);
 }
@@ -58,9 +57,49 @@ main {
 
 .albums  {
   overflow: auto;
-  padding: 100px;
+  padding: 0 30px;
+  padding-top: 100px;
+}
+
+.albums nav {
+  text-align: center;
+}
+
+.albums ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.showcase {
+  display: flex;
+  width: 100%;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.exhibit_box {
+  width: calc((100% / 6) - 10px);
+  text-align: center;
+}
+
+.exhibit_box:not(:last-child) {
+  margin-right: 10px;
+}
+
+.exhibit_box img {
+  width: 100%;
 }
 /* main page end */
+@media screen and (max-width: 992px) {
+  .showcase {
+    justify-content: flex-start;
+  }
+
+  .exhibit_box {
+    width: calc((100% / 4) - 10px);
+  }
+}
+
 @media screen and (max-width: 767px) {
   .menu {
     width: 50px;
