@@ -59,6 +59,7 @@ main {
   overflow: auto;
   padding: 0 30px;
   padding-top: 100px;
+  height: 100%;
 }
 
 .albums nav {
