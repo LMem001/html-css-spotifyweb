@@ -13,6 +13,7 @@
 
 .menu h4 {
   padding: 5px 15px;
+  font-size: 13px;
 }
 
 h2, h3, h4 {
@@ -26,13 +27,35 @@ a {
 /* Buttons */
 .menu__btn {
   border-left: 3px solid transparent;
-  padding: 5px 12px;
+  padding: 8px 15px;
   text-decoration: none;
   display: block;
 }
 
 .menu__btn:focus {
   border-color: #adff2f;
+  color: #fff;
+}
+
+.menu__btn__download img  {
+  height: 13px;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.menu__btn__profile {
+  color: #fff;
+  width: 100%;
+  font-size: 11px;
+}
+
+.menu__btn__profile img {
+  background-color: grey;
+  border-radius: 50%;
+  padding: 1px;
+  height: 18px;
+  vertical-align: sub;
+  margin-right: 10px;
 }
 /* Buttons end */
 /* Mix end */
@@ -48,7 +71,8 @@ main {
   flex-direction: column;
   justify-content: space-between;
   padding-bottom: 100px;
-  font-size: 13px;
+  font-size: 10px;
+  font-weight: 600;
 }
 
 .logo {
@@ -67,8 +91,15 @@ main {
   background-color: #000;
   border:none;
   color: white;
-  margin-left: 15px;
   padding: 5px 0;
+  width: 60%;
+  font-size: inherit;
+  font-weight: inherit;
+  outline: none;
+}
+
+.search__li {
+  padding-left: 15px;
 }
 
 .menu ul li {
@@ -80,15 +111,30 @@ main {
   display: block;
 }
 
-.menu li img {
-  height: 20px;
+.app_nav li img  {
+  height: 15px;
   vertical-align: middle;
   margin-right: 5px;
 }
 
+.playlist_nav {
+  overflow-y: auto;
+}
+
 .menu__bottom {
   height: 100px;
-  background-color: yellow;
+}
+
+.fa-plus {
+  padding: 8px;
+  background-color: lightgrey;
+  color: #000;
+  font-size: 20px;
+}
+
+.menu hr {
+  margin: 5px 10px;
+  border-color: #666666;
 }
 /* menu end */
 /* main page */
