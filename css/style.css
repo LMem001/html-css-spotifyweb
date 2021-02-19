@@ -13,10 +13,9 @@
 
 h2 {
   padding-top: 50px;
-  padding-bottom: 30px;
 }
 
-.albums h3 {
+.albums h3  {
   font-size: 15px;
   padding: 13px 0;
 }
@@ -234,6 +233,17 @@ main {
 }
 /* albums navbar */
 
+.recently_played h2 {
+  padding-bottom: 30px;
+}
+
+.main_page section p {
+  padding-top: 10px;
+  padding-bottom: 35px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
 .showcase {
   display: flex;
   width: 100%;
@@ -252,6 +262,10 @@ main {
 
 .exhibit_box img {
   width: 100%;
+}
+
+.artists img {
+  border-radius: 50%;
 }
 /* main page end */
 /* footer  */
