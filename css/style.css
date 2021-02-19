@@ -24,6 +24,10 @@ a {
   color: currentColor;
   text-decoration: none;
 }
+
+.menu a:hover {
+  color:#fff;
+}
 /* Tipography end */
 /* Buttons */
 .menu__btn {
@@ -66,6 +70,11 @@ a {
   font-size: 13px;
   font-weight: 600;
   margin-right: 17px;
+}
+
+.upgrade__btn:hover {
+  background: #fff;
+  color:#000;
 }
 /* Buttons end */
 /* Mix end */
@@ -172,24 +181,43 @@ main {
 
 .albums  {
   overflow: auto;
-  padding: 100px 30px;
+  padding: 115px 30px;
   height: 100%;
 }
-
+/* albums navbar */
 .albums nav {
   text-align: center;
+}
+
+.albums ul li:not(:last-child) {
+  margin-right: 25px;
 }
 
 .albums ul li {
   list-style: none;
   display: inline-block;
+  position: relative;
 }
 
 .albums ul li a {
   text-decoration: none;
   color: currentColor;
   text-transform: uppercase;
+  font-size: 10px;
+  font-weight: 700;
 }
+
+.albums .focus::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  border: 1px solid #a3f12e;
+  position: absolute;
+  bottom: -3px;
+  left: calc(50% - 12px);
+  border-radius: 20px;
+}
+/* albums navbar */
 
 .showcase {
   display: flex;
