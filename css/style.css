@@ -261,7 +261,7 @@ main {
 }
 
 .thumbnail {
-  position: relative;
+  position: relative
 }
 
 .exhibit_box img {
@@ -278,8 +278,7 @@ main {
   width: 100%;
   height: 100%;
   z-index: 1;
-  opacity: 1;
-  pointer-events: none;
+  cursor: pointer;
 }
 
 .exhibit_box .fa-play-circle {
@@ -292,15 +291,15 @@ main {
   z-index: 2;
   opacity: 0;
   padding: 20px;
-  pointer-events: none;
 }
 
 .thumbnail:hover .fa-play-circle {
   opacity: 1;
 }
 
-.artists img {
+.thumbnail__artist {
   border-radius: 50%;
+  overflow: hidden;
 }
 /* main page end */
 /* footer  */
