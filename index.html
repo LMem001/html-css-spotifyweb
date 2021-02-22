@@ -25,21 +25,22 @@
     <aside class="menu">
       <!-- logo -->
       <div class="logo">
-        <img src="img/logo.svg" alt="logo">
+        <img class="logo--big" src="img/logo.svg" alt="logo">
+        <img class="logo--small" src="img/logo-small.svg" alt="small logo">
       </div>
       <!-- /logo -->
       <!-- app nav -->
       <nav class="app_nav">
         <ul>
-          <li><a class="menu__btn" href="#"><img src="img/home.svg" alt="">Home</a></li>
-          <li class="search__li"><img src="img/search.svg" alt="Search bar"><input type="text" class="search" placeholder="Cerca"></li>
-          <li><a class="menu__btn" href="#"><img src="img/libreria.svg" alt="libreria">La tua libreria</a></li>
+          <li><a class="menu__btn" href="#"><img src="img/home.svg" alt="menu button"><span class="menu__text">Home</span></a></li>
+          <li class="search__li"><img src="img/search.svg" alt="Search bar"><input type="text" class="search menu__text" placeholder="Cerca"></li>
+          <li><a class="menu__btn" href="#"><img src="img/libreria.svg" alt="libreria"><span class="menu__text">La tua libreria</span></a></li>
         </ul>
       </nav>
       <!-- /app nav -->
       <!-- playlist nav -->
-      <h4>Playlist</h4>
-      <a class="menu__btn" href="#"><i class="fas fa-plus"></i>Crea Playlist</a>
+      <h4 class="menu__text">Playlist</h4>
+      <a class="menu__btn menu__text" href="#"><i class="fas fa-plus"></i>Crea Playlist</a>
       <nav class="playlist_nav">
         <ul>
           <li><a class="menu__btn" href="#">Nome Playlist</a></li>
@@ -54,9 +55,9 @@
       <!-- /playlist nav -->
       <!-- get app and profile settings -->
       <div class="menu__bottom">
-        <a class="menu__btn menu__btn__download" href="#"><img src="img/download.svg" alt="">Installa app</a>
+        <a class="menu__btn menu__btn__download" href="#"><img src="img/download.svg" alt="install button"><span class="menu__text">Installa app</span></a>
         <hr>
-        <a class="menu__btn menu__btn__profile" href="#"><img src="img/profile.svg" alt="">John Doe</a>
+        <a class="menu__btn menu__btn__profile" href="#"><img src="img/profile.svg" alt="profile button"><span class="menu__text">John Doe</span></a>
       </div>
       <!-- /get app and profile settings -->
     </aside>
@@ -196,8 +197,10 @@
           <h5>Sinister</h5>
           <h6>Christopher Young</h6>
         </div>
-        <i class="far fa-heart"></i>
-        <i class="far fa-folder"></i>
+        <div class="add_favorites">
+          <i class="far fa-heart"></i>
+          <i class="far fa-folder"></i>
+        </div>
       </div>
       <div class="controls"></div>
       <div class="streaming_settings"></div>
