@@ -377,33 +377,52 @@ main {
   width: 50%;
 }
 
-.controls::after {
-  content: "";
-  display: block;
+.controls__timeline {
+  text-align: center;
+  font-size: 10px;
+}
+
+.controls__timeline span {
+  vertical-align: middle;
+  font-weight: 600;
+}
+
+.timeline {
+  display: inline-block;
   width: calc(100% - 270px);
+  position: relative;
   height: 3px;
   border-radius: 5px;
   background-color: #666666;
   border: 2px;
   border-color: white;
-  margin: auto;
+  margin: 0 15px;
   margin-top: 10px;
 }
 
-.control_keys {
+.timeline::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: inherit;
+  left: 0;
+  background-color: #c1c1c1;
+}
+
+.control__keys {
   text-align: center;
 }
 
-.control_keys > * {
+.control__keys > * {
   font-size: 15px;
   vertical-align: middle;
 }
 
-.control_keys .fa-play-circle {
+.control__keys .fa-play-circle {
   font-size: 25px;
 }
 
-.control_keys *:not(:last-child) {
+.control__keys *:not(:last-child) {
   margin-right: 20px;
 }
 
