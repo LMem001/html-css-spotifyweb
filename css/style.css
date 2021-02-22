@@ -352,6 +352,7 @@ main {
 
 .current_song {
   color: #666666;
+  width: 20%;
 }
 
 .current_song img {
@@ -371,7 +372,45 @@ main {
 .add_favorites .fa-folder {
   display: inline-block;
 }
-/* footer  */
+
+.controls  {
+  width: 50%;
+}
+
+.controls::after {
+  content: "";
+  display: block;
+  width: calc(100% - 270px);
+  height: 3px;
+  border-radius: 5px;
+  background-color: #666666;
+  border: 2px;
+  border-color: white;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.control_keys {
+  text-align: center;
+}
+
+.control_keys > * {
+  font-size: 15px;
+  vertical-align: middle;
+}
+
+.control_keys .fa-play-circle {
+  font-size: 25px;
+}
+
+.control_keys *:not(:last-child) {
+  margin-right: 20px;
+}
+
+.streaming_settings {
+  width: 20%;
+}
+/* footer emd */
 @media screen and (max-width: 1170px) {
   .showcase {
     justify-content: flex-start;
@@ -383,14 +422,14 @@ main {
 }
 
 @media screen and (max-width: 992px) {
-    .exhibit_box {
-      width: calc((100% / 2) - 10px);
-    }
+  .exhibit_box {
+    width: calc((100% / 2) - 10px);
+  }
 
-    .add_favorites .fa-heart {
-      display: block;
-      margin-bottom: 3px;
-    }
+  .add_favorites .fa-heart {
+    display: block;
+    margin-bottom: 3px;
+  }
 }
 
 @media screen and (max-width: 767px) {
