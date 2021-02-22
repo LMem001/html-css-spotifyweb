@@ -345,6 +345,10 @@ main {
   padding: 10px;
 }
 
+.media_player i {
+  cursor: pointer;
+}
+
 .current_song {
   display: flex;
   align-items: center;
@@ -437,15 +441,24 @@ main {
   vertical-align: bottom;
 }
 
-.streaming_settings::after {
-  content: "";
+.volume {
   display: inline-block;
+  position: relative;
   width: 100px;
   height: 3px;
   border-radius: 5px;
   background-color: #666666;
   border: 2px;
   border-color: white;
+}
+
+.volume::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: inherit;
+  left: 0;
+  background-color: #c1c1c1;
 }
 /* footer emd */
 @media screen and (max-width: 1170px) {
