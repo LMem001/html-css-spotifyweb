@@ -359,6 +359,10 @@ main {
   width: 20%;
 }
 
+.current_song i:hover {
+  color: #fff;
+}
+
 .current_song img {
   height: 50px;
 }
@@ -395,13 +399,14 @@ main {
   display: inline-block;
   width: calc(100% - 270px);
   position: relative;
-  height: 3px;
+  height: 4px;
   border-radius: 5px;
   background-color: #666666;
   border: 2px;
   border-color: white;
   margin: 0 15px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .timeline::before {
@@ -411,6 +416,23 @@ main {
   height: inherit;
   left: 0;
   background-color: #c1c1c1;
+  border-radius: inherit;
+}
+
+.timeline:hover::before {
+  background-color: #adff2f
+}
+
+.timeline:hover::after {
+  content: "";
+  position: absolute;
+  left: 96px;
+  bottom: -3px;
+  vertical-align: middle;
+  background-color: #fff;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
 }
 
 .control__keys {
@@ -445,11 +467,12 @@ main {
   display: inline-block;
   position: relative;
   width: 100px;
-  height: 3px;
+  height: 4px;
   border-radius: 5px;
   background-color: #666666;
   border: 2px;
   border-color: white;
+  cursor: pointer;
 }
 
 .volume::before {
@@ -459,7 +482,25 @@ main {
   height: inherit;
   left: 0;
   background-color: #c1c1c1;
+  border-radius: inherit;
 }
+
+.volume:hover::before {
+  background-color: #adff2f
+}
+
+.volume:hover::after {
+  content: "";
+  position: absolute;
+  left: 27px;
+  bottom: -3px;
+  vertical-align: middle;
+  background-color: #fff;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
 /* footer emd */
 @media screen and (max-width: 1170px) {
   .showcase {
