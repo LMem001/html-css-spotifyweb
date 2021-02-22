@@ -407,8 +407,26 @@ main {
   margin-right: 20px;
 }
 
-.streaming_settings {
+.streaming_settings  {
   width: 20%;
+  text-align: right;
+}
+
+.streaming_settings .fas {
+  margin-right: 10px;
+  font-size: 12px;
+  vertical-align: bottom;
+}
+
+.streaming_settings::after {
+  content: "";
+  display: inline-block;
+  width: 100px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #666666;
+  border: 2px;
+  border-color: white;
 }
 /* footer emd */
 @media screen and (max-width: 1170px) {
