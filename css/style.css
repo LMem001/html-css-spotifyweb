@@ -57,9 +57,10 @@ a {
   border-left: 3px solid transparent;
   padding: 8px 15px;
   display: block;
+  outline: none;
 }
 
-.menu__btn:focus {
+.menu__btn--focus {
   border-color: #adff2f;
   color: #fff;
 }
@@ -97,6 +98,7 @@ a {
   margin-right: 17px;
   transition: 0.1s;
   cursor: pointer;
+  outline: none;
 }
 
 .upgrade__btn:hover {
@@ -255,6 +257,7 @@ main {
   text-transform: uppercase;
   font-size: 10px;
   font-weight: 700;
+  outline: none;
 }
 
 .albums ul li a:hover {
