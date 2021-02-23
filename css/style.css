@@ -369,7 +369,7 @@ main {
 }
 
 .current_song img {
-  height: 50px;
+  max-height: 50px;
 }
 
 .song_info {
@@ -377,9 +377,12 @@ main {
   width: 125px;
 }
 
+.add_favorites {
+  display: flex;
+}
+
 .add_favorites .fa-heart {
-  margin-right: 10px;
-  display: inline-block;
+  margin-right: 12px;
 }
 
 .add_favorites .fa-folder {
@@ -442,12 +445,13 @@ main {
 }
 
 .control__keys {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .control__keys > * {
   font-size: 15px;
-  vertical-align: middle;
 }
 
 .control__keys .fa-play-circle {
@@ -463,20 +467,20 @@ main {
 }
 
 .streaming_settings  {
-  width: 20%;
-  text-align: right;
+  width: 30%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .streaming_settings .fas {
-  margin-right: 10px;
+  margin-right: 18px;
   font-size: 12px;
-  vertical-align: bottom;
 }
 
 .volume {
-  display: inline-block;
   position: relative;
-  width: 100px;
+  min-width:100px;
   height: 4px;
   border-radius: 5px;
   background-color: #666666;
@@ -488,7 +492,7 @@ main {
 .volume::before {
   content: "";
   position: absolute;
-  width: 30px;
+  width: 30%;
   height: inherit;
   left: 0;
   background-color: #c1c1c1;
@@ -527,8 +531,11 @@ main {
     width: calc((100% / 2) - 10px);
   }
 
+  .add_favorites {
+    flex-direction: column;
+  }
+
   .add_favorites .fa-heart {
-    display: block;
     margin-bottom: 3px;
   }
 }
@@ -561,5 +568,21 @@ main {
 
   .main_page {
     width: calc(100% - 50px);
+  }
+
+  .current_song img {
+    height: 20px;
+  }
+
+  .streaming_settings .fas {
+    margin-right: 5px;
+  }
+
+  .timeline {
+    margin: 0 5px;
+  }
+
+  .volume {
+    margin-top: 5px;
   }
 }
