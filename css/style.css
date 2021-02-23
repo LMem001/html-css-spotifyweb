@@ -86,13 +86,21 @@ a {
 }
 
 .upgrade__btn  {
-  padding: 10px;
+  padding: 10px 36px;
   border: 1px solid #fff;
-  border-radius: 20px;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 60px;
   text-transform: uppercase;
   font-size: 13px;
   font-weight: 600;
   margin-right: 17px;
+  transition: 0.1s;
+  cursor: pointer;
+}
+
+.upgrade__btn:hover {
+  transform: scale(1.1);
 }
 /* Buttons end */
 /* Mix end */
@@ -213,7 +221,7 @@ main {
   position: fixed;
   text-align: right;
   z-index: 10;
-  line-height: 100px;
+  line-height: 80px;
   color: #fff;
 }
 
@@ -404,12 +412,13 @@ main {
   margin: 0 15px;
   margin-top: 10px;
   cursor: pointer;
+  min-width: 123px;
 }
 
 .timeline::before {
   content: "";
   position: absolute;
-  width: 100px;
+  width: 25%;
   height: inherit;
   left: 0;
   background-color: #c1c1c1;
@@ -423,7 +432,7 @@ main {
 .timeline:hover::after {
   content: "";
   position: absolute;
-  left: 96px;
+  left: calc(25% - 4px);
   bottom: -3px;
   vertical-align: middle;
   background-color: #fff;
@@ -443,6 +452,10 @@ main {
 
 .control__keys .fa-play-circle {
   font-size: 25px;
+}
+
+.control__keys .fa-play-circle:hover {
+  transform: scale(1.3);
 }
 
 .control__keys *:not(:last-child) {
