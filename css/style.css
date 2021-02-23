@@ -591,3 +591,13 @@ main {
     margin-top: 5px;
   }
 }
+
+@media screen and (max-height: 500px) {
+  .upgrade {
+    display: none;
+  }
+
+  .albums {
+    padding-top: 10px;
+  }
+}
