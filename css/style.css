@@ -377,6 +377,11 @@ main {
   width: 125px;
 }
 
+.song_info h5:hover, .song_info h6:hover  {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .add_favorites {
   display: flex;
 }
