@@ -225,6 +225,10 @@ main {
   color: #fff;
 }
 
+.albums li {
+  margin-left: -4px;
+}
+
 .albums  {
   overflow: auto;
   padding: 100px 30px;
