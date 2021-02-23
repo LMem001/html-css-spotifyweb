@@ -272,7 +272,7 @@ main {
   border-radius: 20px;
 }
 /* albums navbar end */
-
+/* albums showcase */
 .recently_played h2 {
   padding-bottom: 30px;
 }
@@ -338,6 +338,7 @@ main {
   border-radius: 50%;
   overflow: hidden;
 }
+/* albums showcase end */
 /* main page end */
 /* footer  */
 .media_player {
@@ -358,6 +359,7 @@ main {
   cursor: pointer;
 }
 
+/* current song infos */
 .current_song {
   display: flex;
   align-items: center;
@@ -397,7 +399,8 @@ main {
 .add_favorites .fa-folder {
   display: inline-block;
 }
-
+/* current song infos end */
+/* controls */
 .controls  {
   width: 50%;
 }
@@ -474,7 +477,8 @@ main {
 .control__keys *:not(:last-child) {
   margin-right: 20px;
 }
-
+/* controls end */
+/* streaming_settings */
 .streaming_settings  {
   width: 30%;
   display: flex;
@@ -523,7 +527,7 @@ main {
   width: 10px;
   border-radius: 50%;
 }
-
+/* streaming_settings end */
 /* footer emd */
 @media screen and (max-width: 1170px) {
   .showcase {
