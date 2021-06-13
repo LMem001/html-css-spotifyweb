@@ -1,1 +1,1 @@
-html-css-spotifyweb
+Questo progetto rappresenta uno dei miei primi layout realizzati con la tecnologia flex. Essendo questa la riproposizione della versione desktop dell'omonima web app, questo applicativo non è estremamente responsive, tuttavia mi sono impegnato a migliorare questo aspetto rispetto all'originale.
